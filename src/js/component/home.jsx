@@ -1,24 +1,27 @@
 import React from "react";
-
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
-
+import Luces from "./Luces.jsx";
+const palostyle={
+    width: "10px",
+	height: "60px",
+	margin: "0 auto",
+}
+const semaforostyle={
+	
+    width: "100px",
+	height: "280px",
+	margin: "0 auto",
+	borderRadius: "15px",
+	position: "relative",
+}
 //create your first component
 const Home = () => {
 	return (
-		<div className="text-center">
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
+		<div>
+			<div className="bg-dark" style={palostyle}>
+			</div>
+			<div className="bg-dark" style={semaforostyle}>
+				<Luces/>
+			</div>
 		</div>
 	);
 };
